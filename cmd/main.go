@@ -26,7 +26,7 @@ func main() {
 	// example usage
 	tx, err := iota.SendToTangle("IOTA is fun")
 	if err != nil {
-		return
+		panic(err)
 	}
 
 	fmt.Printf("tangle transaction: %v\n", tx)
